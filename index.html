@@ -1,1 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="조서현의 개인 포트폴리오 웹사이트입니다.">
+  <meta name="author" content="조서현">
+  <title>조서현의 포트폴리오</title>
+  
+  <!-- 구글 폰트 (Roboto, Open Sans) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- 기본 스타일링 (CSS) -->
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #4e73df;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin: 0;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 15px;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      background-color: #4e73df;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-size: 2.5em;
+      color: #4e73df;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .content-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .content-wrapper .card {
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .content-wrapper .card h3 {
+      font-size: 1.8em;
+      color: #4e73df;
+    }
+
+    .content-wrapper .card p {
+      font-size: 1.1em;
+      color: #555;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    footer a {
+      color: #4e73df;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      background-color: #4e73df;
+      color: white;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.1em;
+    }
+
+    .contact-form button:hover {
+      background-color: #375a8e;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>조서현의 포트폴리오</h1>
+    <p>컴퓨터 소프트웨어공학과 1학년 | 개발자 지망생</p>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#about">자기소개</a>
+    <a href="#projects">프로젝트</a>
+    <a href="#tech-stack">기술 스택</a>
+    <a href="#contact">연락처</a>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="section-title">자기소개</div>
+    <div class="content-wrapper">
+      <div class="card">
+        <h3>안녕하세요, 저는 조서현입니다.</h3>
+        <p>현재 컴퓨터 소프트웨어공학과 1학년에 재학 중이며, 다양한 개발 기술을 배우고 있습니다. 특히 웹 개발과 데이터 분석에 큰 관심을 가지고 학습하고 있습니다.</p>
+        <p>기술 스택은 Python, JavaScript, React, MySQL 등을 포함하고 있습니다. 앞으로도 다양한 프로젝트를 통해 실력을 쌓아가고 있습니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="section-title">프로젝트</div>
+    <div class="content-wrapper">
+      <div class="card">
+        <h3>간단한 Todo List 웹 애플리케이션</h3>
+        <p>HTML, CSS, JavaScript로 만든 할 일 목록 웹 애플리케이션</p>
+        <a href="https://github.com/your-username/todo-app" target="_blank">GitHub에서 보기</a>
+      </div>
+      <div class="card">
+        <h3>날씨 정보 제공 웹사이트</h3>
+        <p>OpenWeather API를 사용하여 실시간 날씨 정보를 제공하는 웹사이트</p>
+        <a href="https://github.com/your-username/weather-app" target="_blank">GitHub에서 보기</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack Section -->
+  <section id="tech-stack">
+    <div class="section-title">기술 스택</div>
+    <div class="content-wrapper">
+      <div class="card">
+        <h3>프로그래밍 언어</h3>
+        <p>Python, JavaScript, C++</p>
+      </div>
+      <div class="card">
+        <h3>웹 개발</h3>
+        <p>HTML, CSS, JavaScript, React</p>
+      </div>
+      <div class="card">
+        <h3>데이터베이스</h3>
+        <p>MySQL, MongoDB</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="section-title">연락처</div>
+    <div class="content-wrapper">
+      <div class="card">
+        <form class="contact-form">
+          <input type="text" name="name" placeholder="이름" required>
+          <input type="email" name="email" placeholder="이메일" required>
+          <textarea name="message" placeholder="메시지" required></textarea>
+          <button type="submit">보내기</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 조서현. <a href="mailto:your-email@example.com">이메일</a> | <a href="https://github.com/your-username" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a></p>
+  </footer>
+
+  <script>
+    // 간단한 폼 제출 처리
+    document.querySelector('.contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('메시지가 제출되었습니다!');
+    });
+  </script>
+
+</body>
+
+</html>
 
